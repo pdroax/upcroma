@@ -32,7 +32,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname == "/install" ? "active" : ""}
+              className={pathname == "/install/" ? "active" : ""}
             >
               Instalação
             </Link>
@@ -44,9 +44,9 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname == "/sales" ? "active" : ""}
+              className={pathname == "/sales/" ? "active" : ""}
             >
-              Revendas
+              Produtos
             </Link>
           </li>
           <li className="item">
@@ -56,7 +56,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname == "/blog" ? "active" : ""}
+              className={pathname == "/blog/" ? "active" : ""}
             >
               Blog
             </Link>
