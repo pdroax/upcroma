@@ -16,6 +16,11 @@
     padding: 0;
 }
 
+/* Esconde o segundo produto */
+.products li:nth-child(2) {
+    display: none;
+}
+
 .product {
     background-color: #fefaf5;
     border: 1px solid #ddd;

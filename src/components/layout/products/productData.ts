@@ -116,6 +116,34 @@ export const products = [
       },
     ],
   },
+  {
+    name: "Professional Fumê - Verde",
+    description: "",
+    gradations: [
+      { name: "Sem película", image: DEFAULT_IMAGE },
+      {
+        name: "5%",
+        image: IMAGES.fume.verde["5"],
+        visibility: "5%",
+        solarEnergy: "85%",
+        uvTransmission: "2%",
+      },
+      {
+        name: "20%",
+        image: IMAGES.fume.verde["20"],
+        visibility: "20%",
+        solarEnergy: "86%",
+        uvTransmission: "2%",
+      },
+      {
+        name: "50%",
+        image: IMAGES.fume.verde["50"],
+        visibility: "50%",
+        solarEnergy: "75%",
+        uvTransmission: "5%",
+      },
+    ],
+  },
   // ----
   // metalizada
   {
