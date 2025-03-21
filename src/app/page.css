@@ -23,28 +23,37 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.6;
 }
 
 .content {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    color: #ffffff;
-    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    z-index: 2;
+    color: #ffffff;
+    text-align: center;
     background: rgba(0, 0, 0, 0.5);
+}
+
+.content>div {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    padding: 2rem;
 }
 
 .content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #01257d;
 }
 
 .content h1 span {
@@ -55,6 +64,7 @@
     font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: 500;
+    color: #01257d;
 }
 
 .pitch-text {
@@ -63,30 +73,37 @@
 }
 
 .pitch-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #01247dc6;
 }
 
 .cta-button {
     display: inline-block;
     padding: 1rem 3rem;
-    font-size: 1.2rem;
-    color: #ffffff;
+    font-size: 1.5rem;
+    color: #01257d;
     background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 30px;
+    border: 3px solid #01257d;
+    border-radius: 25px;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .cta-button:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #01257d;
+    color: #f8e9d4;
+    cursor: pointer;
 }
 
 .rates-section {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 4rem 0;
-    background-color: #f5f5f5;
+    background-color: #f8e9d4;
 }
 
 .rates-container {
@@ -99,33 +116,53 @@
     padding: 4rem 0;
 }
 
-/* Media Queries */
+.installation-bg {
+    margin-top: 100px;
+    width: 100vw;
+    height: 200px;
+    background-image: url('/images/instalation.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsividade */
 @media (max-width: 1024px) {
     .content h1 {
-        font-size: 3rem;
+        font-size: 2.5em;
     }
 
     .content h2 {
-        font-size: 1.8rem;
+        font-size: 1.8em;
+    }
+
+    .pitch-text p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1.2em;
+        padding: 0.8em 3em;
+        border-radius: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .content h1 {
-        font-size: 2.5rem;
+        font-size: 2em;
     }
 
     .content h2 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .pitch-text p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .cta-button {
-        padding: 0.8rem 2.5rem;
-        font-size: 1.1rem;
+        font-size: 1em;
+        padding: 0.6em 2em;
+        border-radius: 15px;
     }
 }
 
@@ -135,19 +172,23 @@
     }
 
     .content h1 {
-        font-size: 2rem;
+        font-size: 1.5em;
     }
 
     .content h2 {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
     .pitch-text p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .cta-button {
-        padding: 0.7rem 2rem;
-        font-size: 1rem;
+        font-size: 0.9em;
+        padding: 0.5em 1.5em;
+    }
+
+    .rates-section {
+        margin: 20px;
     }
 }
