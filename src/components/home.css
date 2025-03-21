@@ -1,22 +1,22 @@
-.home-container {
+.home-wrapper {
     width: 100%;
     min-height: 100vh;
 }
 
-.hero-section {
+.home-hero-section {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
-.video-container {
+.home-video-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.video-container video {
+.home-video-wrapper video {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
     opacity: 0.6;
 }
 
-.content {
+.home-hero-content {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -42,37 +42,37 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.content>div {
+.home-hero-content>div {
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
     padding: 2rem;
 }
 
-.content h1 {
+.home-hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
     color: #01257d;
 }
 
-.content h1 span {
+.home-hero-content h1 span {
     color: #f8e9d4;
 }
 
-.content h2 {
+.home-hero-content h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: 500;
     color: #01257d;
 }
 
-.pitch-text {
+.home-pitch-text {
     max-width: 800px;
     margin: 0 auto 2rem;
 }
 
-.pitch-text p {
+.home-pitch-text p {
     font-size: 1.3rem;
     line-height: 1.6;
     text-align: center;
@@ -80,7 +80,7 @@
     color: #01247dc6;
 }
 
-.cta-button {
+.home-cta-button {
     display: inline-block;
     padding: 1rem 3rem;
     font-size: 1.5rem;
@@ -92,13 +92,13 @@
     transition: all 0.5s ease;
 }
 
-.cta-button:hover {
+.home-cta-button:hover {
     background-color: #01257d;
     color: #f8e9d4;
     cursor: pointer;
 }
 
-.rates-section {
+.home-rates-section {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -106,18 +106,18 @@
     background-color: #f8e9d4;
 }
 
-.rates-container {
+.home-rates-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.contact-section {
+.home-contact-section {
     padding: 4rem 0;
 }
 
 
-.instalation-bg {
+.home-installation-bg {
     margin-top: 100px;
     width: 100vw;
     height: 200px;
@@ -128,19 +128,19 @@
 
 /* Responsividade */
 @media (max-width: 1024px) {
-    .content h1 {
+    .home-hero-content h1 {
         font-size: 2.5em;
     }
 
-    .content h2 {
+    .home-hero-content h2 {
         font-size: 1.8em;
     }
 
-    .pitch-text p {
+    .home-pitch-text p {
         font-size: 1.2rem;
     }
 
-    .cta-button {
+    .home-cta-button {
         font-size: 1.2em;
         padding: 0.8em 3em;
         border-radius: 20px;
@@ -148,19 +148,19 @@
 }
 
 @media (max-width: 768px) {
-    .content h1 {
+    .home-hero-content h1 {
         font-size: 2em;
     }
 
-    .content h2 {
+    .home-hero-content h2 {
         font-size: 1.5em;
     }
 
-    .pitch-text p {
+    .home-pitch-text p {
         font-size: 1rem;
     }
 
-    .cta-button {
+    .home-cta-button {
         font-size: 1em;
         padding: 0.6em 2em;
         border-radius: 15px;
@@ -168,28 +168,28 @@
 }
 
 @media (max-width: 480px) {
-    .content {
+    .home-hero-content {
         padding: 1rem;
     }
 
-    .content h1 {
+    .home-hero-content h1 {
         font-size: 1.5em;
     }
 
-    .content h2 {
+    .home-hero-content h2 {
         font-size: 1.2em;
     }
 
-    .pitch-text p {
+    .home-pitch-text p {
         font-size: 0.9rem;
     }
 
-    .cta-button {
+    .home-cta-button {
         font-size: 0.9em;
         padding: 0.5em 1.5em;
     }
 
-    .rates-section {
+    .home-rates-section {
         margin: 20px;
     }
 }
