@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 function page() {
-  return <FormContact type="page" />;
+  return <FormContact />;
 }
 
 export default page;
