@@ -1,39 +1,38 @@
-import Contact from "@/components/Contact";
-import "./aboutus.css";
+import { Metadata } from "next";
+import "./page.css";
+
+export const metadata: Metadata = {
+  title: "Sobre Nós",
+  description:
+    "Conheça a história da Croma Films, especialista em películas em Curitiba desde 2008. Nossa experiência e compromisso com qualidade.",
+};
 
 export default function AboutUs() {
   return (
-    <section className="about-container">
-      <div className="about-content">
-        <h1>Sobre nós</h1>
+    <main className="about-container">
+      <section className="about-hero">
+        <h1>Nossa História</h1>
+        <p>Desde 2008 transformando ambientes em Curitiba</p>
+      </section>
 
-        <div className="about-text">
+      <section className="about-content">
+        <div className="mission">
+          <h2>Missão</h2>
           <p>
-            A Croma Films nasceu em 2008, partindo da necessidade de atendimento
-            mais personalizado no mercado de películas solares. Oferecendo
-            serviços de instalação de películas solares em Curitiba e região,
-            garantimos aos nossos clientes, residenciais e empresariais,
-            durabilidade e eficiência em nossos produtos. Além da instalação na
-            região de Curitiba, a Croma Films oferece revenda de películas para
-            todo o Brasil.
-          </p>
-
-          <p>
-            Compreendemos a necessidade dos nossos clientes de segurança,
-            privacidade e autonomia dentro de suas residências e comércios, por
-            isso, focamos em um atendimento rápido e único baseado em suas
-            prioridades. Nossa missão é o seu conforto e segurança. Venha
-            conhecer <a href="/sales">nossas películas</a> e{" "}
-            <a href="/install">o que podemos fazer por você</a>.
+            Proporcionar conforto e segurança através de soluções em películas
           </p>
         </div>
-      </div>
 
-      <div className="about-image" />
-
-      <div id="contact">
-        <Contact />
-      </div>
-    </section>
+        <div className="values">
+          <h2>Valores</h2>
+          <ul>
+            <li>Qualidade</li>
+            <li>Compromisso</li>
+            <li>Inovação</li>
+            <li>Atendimento personalizado</li>
+          </ul>
+        </div>
+      </section>
+    </main>
   );
 }

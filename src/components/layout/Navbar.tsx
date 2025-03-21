@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import "./Navbar.css";
 
@@ -62,10 +63,13 @@ function Navbar() {
           </li>
           <div className="logo">
             <Link href="/" onClick={toTop}>
-              <img
+              <Image
                 className="img"
                 src="/images/logo-croma-films.png"
                 alt="Croma films"
+                width={200}
+                height={50}
+                priority
               />
             </Link>
           </div>
@@ -121,10 +125,13 @@ function Navbar() {
             closeMenu();
           }}
         >
-          <img
+          <Image
             className="imgMob"
             src="/images/logo-croma-films.png"
             alt="Croma films"
+            width={130}
+            height={32}
+            priority
           />
         </Link>
       </div>

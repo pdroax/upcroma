@@ -1,6 +1,13 @@
+import { Metadata } from "next";
 import Contact from "@/components/Contact";
 import Rates from "../components/layout/Rates";
 import "./page.css";
+
+export const metadata: Metadata = {
+  title: "Início",
+  description:
+    "Especialistas em películas residenciais e empresariais em Curitiba desde 2008. Proteção solar, segurança e privacidade para seu ambiente.",
+};
 
 export default function Home() {
   return (
@@ -14,6 +21,7 @@ export default function Home() {
             playsInline
             poster="/images/poster-video.jpg"
             preload="metadata"
+            aria-label="Vídeo demonstrativo de aplicação de películas"
           >
             <source src="/videos/videoWoman.mp4" type="video/mp4" />
             Seu navegador não suporta vídeos.
@@ -40,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="rates-section">
+      <section className="rates-section" aria-label="Tabela de preços">
         <div className="rates-container">
           <Rates />
         </div>
