@@ -1,32 +1,28 @@
 .contato {
     width: 100%;
-    margin: 0 auto;
 }
 
 .form {
     width: 100%;
     margin: 2em 0;
-    padding: 0 3em;
+    text-align: left;
 }
 
-.form-input,
-.form-select,
-.form-text {
+/* input */
+.form-input {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
 }
 
-.form-input label,
-.form-select label,
-.form-text label {
+.form-input label {
+    margin-top: .6em;
     margin-bottom: .6em;
     font-weight: bold;
     color: #01257d;
 }
 
-.form-input input,
-.form-select select {
+.form-input input {
     padding: .7em;
     border-radius: 10px;
     border: none;
@@ -34,6 +30,40 @@
 
 .form-input input::placeholder {
     color: #477498a4;
+}
+
+/* select */
+.form-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-select label {
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
+}
+
+.form-select select {
+    padding: .7em;
+    border-radius: 10px;
+    border: none;
+    color: #01257d;
+    background-color: white;
+}
+
+/* textarea */
+.form-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-text label {
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
 }
 
 .form-text textarea {

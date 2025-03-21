@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "./aboutus.css";
+import FormContact from "@/components/form/FormContact";
 
 export const metadata: Metadata = {
   title: "Sobre Nós",
@@ -9,30 +10,37 @@ export const metadata: Metadata = {
 
 export default function AboutUs() {
   return (
-    <main className="about-container">
-      <section className="about-hero">
-        <h1>Nossa História</h1>
-        <p>Desde 2008 transformando ambientes em Curitiba</p>
-      </section>
-
-      <section className="about-content">
-        <div className="mission">
-          <h2>Missão</h2>
+    <section className="about-container">
+      <div className="about-us">
+        <h1 className="title">Sobre nós</h1>
+        <br />
+        <div className="text-about">
           <p>
-            Proporcionar conforto e segurança através de soluções em películas
+            A Croma Films nasceu em 2008, partindo da necessidade de atendimento
+            mais personalizado no mercado de películas solares. Oferecendo
+            serviços de instalação de películas solares em Curitiba e região,
+            garantimos aos nossos clientes, residenciais e empresariais,
+            durabilidade e eficiência em nossos produtos. Além da instalação na
+            região de Curitiba, a Croma Films oferece revenda de películas para
+            todo o Brasil.
+          </p>
+          <br />
+          <p>
+            Compreendemos a necessidade dos nossos clientes de segurança,
+            privacidade e autonomia dentro de suas residências e comércios, por
+            isso, focamos em um atendimento rápido e único baseado em suas
+            prioridades. Nossa missão é o seu conforto e segurança. Venha
+            conhecer <a href="/sales">nossas películas</a> e{" "}
+            <a href="/install">o que podemos fazer por você</a>.
           </p>
         </div>
+      </div>
 
-        <div className="values">
-          <h2>Valores</h2>
-          <ul>
-            <li>Qualidade</li>
-            <li>Compromisso</li>
-            <li>Inovação</li>
-            <li>Atendimento personalizado</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+      <div className="bg-img"></div>
+
+      <div id="contact">
+        <FormContact />
+      </div>
+    </section>
   );
 }

@@ -53,7 +53,10 @@ export default function Home() {
           <Rates />
         </div>
       </section>
-
+      <div
+        className="instalation-bg"
+        aria-label="Imagens de películas instaladas"
+      ></div>
       <section id="contact" className="contact-section">
         <Contact />
       </section>

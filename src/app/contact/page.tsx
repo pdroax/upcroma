@@ -1,4 +1,4 @@
-import Contact from "@/components/Contact";
+import FormContact from "@/components/form/FormContact";
 import { Metadata } from "next";
 import React from "react";
 export const metadata: Metadata = {
@@ -8,11 +8,7 @@ export const metadata: Metadata = {
 };
 
 function page() {
-  return (
-    <div>
-      <Contact />
-    </div>
-  );
+  return <FormContact type="page" />;
 }
 
 export default page;

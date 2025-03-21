@@ -32,7 +32,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname === "/install" ? "active" : ""}
+              className={pathname == "/install" ? "active" : ""}
             >
               Instalação
             </Link>
@@ -44,7 +44,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname === "/sales" ? "active" : ""}
+              className={pathname == "/sales" ? "active" : ""}
             >
               Revendas
             </Link>
@@ -56,7 +56,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname === "/blog" ? "active" : ""}
+              className={pathname == "/blog" ? "active" : ""}
             >
               Blog
             </Link>
@@ -80,7 +80,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname === "/" ? "active" : ""}
+              className={pathname == "/" ? "active" : ""}
             >
               Home
             </Link>
@@ -92,7 +92,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname === "/aboutus" ? "active" : ""}
+              className={pathname == "/aboutus/" ? "active" : ""}
             >
               Sobre nós
             </Link>
@@ -104,7 +104,7 @@ function Navbar() {
                 toTop();
                 closeMenu();
               }}
-              className={pathname === "/contact" ? "active" : ""}
+              className={pathname === "/contact/" ? "active" : ""}
             >
               Contato
             </Link>

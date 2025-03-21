@@ -1,43 +1,87 @@
 .contact-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+    padding: 3em;
 }
 
 .contact-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #333;
+    color: #01257d;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .contact-container p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 2rem;
+    color: #01257d;
+    font-weight: 500;
+}
+
+.page {
+    padding-top: 200px;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .contact-container {
+        padding: 2em;
+        /* Reduz o padding para telas médias */
+    }
+
+    .contact-container h1 {
+        font-size: 2em;
+        /* Ajusta o tamanho da fonte do título */
+    }
+
+    .contact-container p {
+        font-size: 1em;
+        /* Fonte menor para parágrafos */
+    }
 }
 
 @media (max-width: 768px) {
     .contact-container {
-        padding: 1.5rem;
+        padding: 1.5em;
+        /* Padding menor para dispositivos menores */
     }
 
     .contact-container h1 {
-        font-size: 2rem;
+        font-size: 1.8em;
+        /* Reduz mais o tamanho do título */
+        text-align: center;
+        /* Centraliza o texto para melhor estética */
     }
 
     .contact-container p {
-        font-size: 1rem;
+        font-size: 0.9em;
+        /* Fonte menor para melhorar a leitura */
+        text-align: center;
+        /* Centraliza o texto */
     }
 }
 
 @media (max-width: 480px) {
     .contact-container {
-        padding: 1rem;
+        padding: 1em;
+        /* Menor espaçamento para telas muito pequenas */
     }
 
     .contact-container h1 {
-        font-size: 1.8rem;
+        font-size: 1.5em;
+        /* Tamanho reduzido do título */
+        text-align: center;
+    }
+
+    .contact-container p {
+        font-size: 0.8em;
+        /* Tamanho menor para parágrafos */
+        text-align: center;
     }
 }
