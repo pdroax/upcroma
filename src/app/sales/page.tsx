@@ -1,8 +1,15 @@
+import { Metadata } from "next";
 import "./sales.css";
 import Contact from "@/components/Contact";
 import Products from "@/components/layout/products/Products";
 
-function Sales() {
+export const metadata: Metadata = {
+  title: "Produtos",
+  description:
+    "Conheça nossa linha completa de películas residenciais e empresariais. Soluções em proteção solar, segurança e privacidade.",
+};
+
+export default function Sales() {
   return (
     <section className="sales-container">
       <div className="content">
@@ -21,5 +28,3 @@ function Sales() {
     </section>
   );
 }
-
-export default Sales;

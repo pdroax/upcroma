@@ -1,3 +1,3 @@
 {
-  "conventionalCommits.scopes": ["Adaptation", "Setup", "Build"]
+  "conventionalCommits.scopes": ["Adaptation", "Setup", "Build", "Fix"]
 }
