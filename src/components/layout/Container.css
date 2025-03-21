@@ -1,0 +1,35 @@
+.container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.min-height {
+    min-height: 75%;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
+    .column {
+        align-items: center;
+    }
+
+    .min-height {
+        min-height: auto;
+    }
+}

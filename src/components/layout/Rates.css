@@ -1,0 +1,25 @@
+.rates-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .rates-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rates-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rates-container {
+        padding: 5px;
+    }
+}

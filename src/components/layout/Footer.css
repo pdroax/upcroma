@@ -1,0 +1,182 @@
+.footer {
+  background-color: #01257d;
+  color: #f8e9d4;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footerItems {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  list-style: none;
+}
+
+.address li {
+  list-style: none;
+  max-width: 300px;
+}
+
+.address li a {
+  text-align: flex-start;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #f8e9d4;
+}
+
+.services {
+  margin: 0 20px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.services li a {
+  text-decoration: none;
+  color: #f8e9d4;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.social-list li {
+  margin: 0 1em;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+
+.social-list li:hover {
+  color: #f8e9d4;
+}
+
+.social-list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-list svg {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.hour p,
+.hour h4 {
+  text-align: start;
+}
+
+.copyright {
+  margin-top: 2em;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.copyright span {
+  font-weight: bold;
+  color: #f8e9d4;
+}
+
+.footerLogo {
+  filter: grayscale() contrast(100%) brightness(100);
+}
+
+.whatsApp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  width: 100px;
+  font-size: 3.5rem;
+  background-color: #01257d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.473);
+}
+
+iframe {
+  border-radius: 25px;
+}
+
+.listLink {
+  text-align: start;
+}
+
+@media (max-width: 1024px) {
+  .footerItems {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address {
+    align-items: center;
+    text-align: center;
+  }
+
+  .address li {
+    align-items: center;
+  }
+
+  .social-list {
+    align-items: center;
+  }
+
+  .hour p,
+  .hour h4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2em;
+  }
+
+  .whatsApp {
+    width: 60px;
+    font-size: 2rem;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .copyright {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerItems {
+    gap: 10px;
+  }
+
+  .address li a,
+  .address li iframe {
+    margin-bottom: 10px;
+  }
+
+  .social-list svg {
+    font-size: 1.2em;
+  }
+
+  .whatsApp {
+    font-size: 2rem;
+    padding: 5px;
+  }
+}
