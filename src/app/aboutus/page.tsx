@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import "./page.css";
+import "./aboutus.css";
 
 export const metadata: Metadata = {
   title: "Sobre Nós",
