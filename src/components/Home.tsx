@@ -1,58 +1,77 @@
 import Contact from "./Contact";
 import Rates from "./layout/Rates";
 import "./home.css";
+import { Html, Head } from "next/document";
 
 export default function Home() {
   return (
-    <div className="home-wrapper">
-      <section className="home-hero-section">
-        <div className="home-video-wrapper">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/images/poster-video.jpg"
-            preload="metadata"
-            aria-label="Vídeo demonstrativo de aplicação de películas"
-          >
-            <source src="/videos/videoWoman.mp4" type="video/mp4" />
-            Seu navegador não suporta vídeos.
-          </video>
+    <Html>
+      <Head>
 
-          <div className="home-hero-content">
-            <h1>
-              Transforme seu ambiente com <span>Croma Films</span>
-            </h1>
-            <h2>Segurança, conforto ou privacidade: nós somos a solução.</h2>
-            <div className="home-pitch-text">
-              <p>
-                Desde 2008 no mercado, a Croma Films é especializada em revenda
-                de películas pelo Brasil e instalação de películas residenciais
-                ou empresariais em Curitiba e região. Contamos com grande
-                variedade de películas com garantia de atendimento rápido e
-                efetivo.
-              </p>
+        {/* Google tag (gtag.js) --> */} 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-737613236"></script> 
+        <script  
+              dangerouslySetInnerHTML={{
+              __html: 
+                `window.dataLayer = window.dataLayer || []; 
+                function gtag(){
+                  dataLayer.push(arguments);
+                } gtag('js', new Date()); 
+                gtag('config', 'AW-737613236');`,}}
+        />
+      </Head>
+
+      <div className="home-wrapper">
+        <section className="home-hero-section">
+          <div className="home-video-wrapper">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/images/poster-video.jpg"
+              preload="metadata"
+              aria-label="Vídeo demonstrativo de aplicação de películas"
+            >
+              <source src="/videos/videoWoman.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos.
+            </video>
+
+            <div className="home-hero-content">
+              <h1>
+                Transforme seu ambiente com <span>Croma Films</span>
+              </h1>
+              <h2>Segurança, conforto ou privacidade: nós somos a solução.</h2>
+              <div className="home-pitch-text">
+                <p>
+                  Desde 2008 no mercado, a Croma Films é especializada em revenda
+                  de películas pelo Brasil e instalação de películas residenciais
+                  ou empresariais em Curitiba e região. Contamos com grande
+                  variedade de películas com garantia de atendimento rápido e
+                  efetivo.
+                </p>
+              </div>
+              <a href="#contact" className="home-cta-button">
+                Faça um orçamento
+              </a>
             </div>
-            <a href="#contact" className="home-cta-button">
-              Faça um orçamento
-            </a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="home-rates-section" aria-label="Tabela de preços">
-        <div className="home-rates-container">
-          <Rates />
-        </div>
-      </section>
-      <div
-        className="home-installation-bg"
-        aria-label="Imagens de películas instaladas"
-      ></div>
-      <section id="contact" className="home-contact-section">
-        <Contact />
-      </section>
-    </div>
+        <section className="home-rates-section" aria-label="Tabela de preços">
+          <div className="home-rates-container">
+            <Rates />
+          </div>
+        </section>
+        <div
+          className="home-installation-bg"
+          aria-label="Imagens de películas instaladas"
+        ></div>
+        <section id="contact" className="home-contact-section">
+          <Contact />
+        </section>
+      </div>
+    </Html>
+
   );
 }

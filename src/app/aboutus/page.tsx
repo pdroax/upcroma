@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import "./aboutus.css";
 import FormContact from "@/components/form/FormContact";
+import { Html, Head } from "next/document";
 
 export const metadata: Metadata = {
   title: "Sobre Nós",
@@ -10,37 +11,52 @@ export const metadata: Metadata = {
 
 export default function AboutUs() {
   return (
-    <section className="about-container">
-      <div className="about-us">
-        <h1 className="title">Sobre nós</h1>
-        <br />
-        <div className="text-about">
-          <p>
-            A Croma Films nasceu em 2008, partindo da necessidade de atendimento
-            mais personalizado no mercado de películas solares. Oferecendo
-            serviços de instalação de películas solares em Curitiba e região,
-            garantimos aos nossos clientes, residenciais e empresariais,
-            durabilidade e eficiência em nossos produtos. Além da instalação na
-            região de Curitiba, a Croma Films oferece revenda de películas para
-            todo o Brasil.
-          </p>
+    <Html>
+      <Head>
+        {/* Google tag (gtag.js) --> */} 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-737613236"></script> 
+        <script  
+          dangerouslySetInnerHTML={{
+          __html: 
+            `window.dataLayer = window.dataLayer || []; 
+            function gtag(){
+              dataLayer.push(arguments);
+            } gtag('js', new Date()); 
+            gtag('config', 'AW-737613236');`,}}
+        />
+      </Head>
+      <section className="about-container">
+        <div className="about-us">
+          <h1 className="title">Sobre nós</h1>
           <br />
-          <p>
-            Compreendemos a necessidade dos nossos clientes de segurança,
-            privacidade e autonomia dentro de suas residências e comércios, por
-            isso, focamos em um atendimento rápido e único baseado em suas
-            prioridades. Nossa missão é o seu conforto e segurança. Venha
-            conhecer <a href="/sales">nossas películas</a> e{" "}
-            <a href="/install">o que podemos fazer por você</a>.
-          </p>
+          <div className="text-about">
+            <p>
+              A Croma Films nasceu em 2008, partindo da necessidade de atendimento
+              mais personalizado no mercado de películas solares. Oferecendo
+              serviços de instalação de películas solares em Curitiba e região,
+              garantimos aos nossos clientes, residenciais e empresariais,
+              durabilidade e eficiência em nossos produtos. Além da instalação na
+              região de Curitiba, a Croma Films oferece revenda de películas para
+              todo o Brasil.
+            </p>
+            <br />
+            <p>
+              Compreendemos a necessidade dos nossos clientes de segurança,
+              privacidade e autonomia dentro de suas residências e comércios, por
+              isso, focamos em um atendimento rápido e único baseado em suas
+              prioridades. Nossa missão é o seu conforto e segurança. Venha
+              conhecer <a href="/sales">nossas películas</a> e{" "}
+              <a href="/install">o que podemos fazer por você</a>.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="bg-img"></div>
+        <div className="bg-img"></div>
 
-      <div id="contact">
-        <FormContact />
-      </div>
-    </section>
+        <div id="contact">
+          <FormContact />
+        </div>
+      </section>
+    </Html>  
   );
 }

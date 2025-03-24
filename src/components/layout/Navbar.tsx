@@ -65,7 +65,7 @@ function Navbar() {
             <Link href="/" onClick={toTop}>
               <Image
                 className="img"
-                src="/images/logo-croma-films.png"
+                src="/images/croma-logo.png"
                 alt="Croma films"
                 width={200}
                 height={50}
@@ -98,7 +98,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="item">
-            <Link
+            {/* <Link
               href="/contact"
               onClick={() => {
                 toTop();
@@ -107,7 +107,10 @@ function Navbar() {
               className={pathname === "/contact/" ? "active" : ""}
             >
               Contato
-            </Link>
+            </Link> */}
+            <a href="#contact">
+              Contato
+            </a>
           </li>
         </ul>
 
@@ -127,7 +130,7 @@ function Navbar() {
         >
           <Image
             className="imgMob"
-            src="/images/logo-croma-films.png"
+            src="/images/croma-logo.png"
             alt="Croma films"
             width={130}
             height={32}
@@ -140,3 +143,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
