@@ -26,6 +26,8 @@
     padding: .7em;
     border-radius: 10px;
     border: none;
+    background-color: #d6d6d6;
+
 }
 
 .form-input input::placeholder {
@@ -50,7 +52,7 @@
     border-radius: 10px;
     border: none;
     color: #01257d;
-    background-color: white;
+    background-color: #d6d6d6;
 }
 
 /* textarea */
@@ -72,6 +74,8 @@
     border: none;
     height: 150px;
     resize: none;
+    background-color: #d6d6d6;
+
 }
 
 .form-text textarea::placeholder {

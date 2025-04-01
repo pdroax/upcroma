@@ -65,7 +65,7 @@ function Navbar() {
             <Link href="/" onClick={toTop}>
               <Image
                 className="img"
-                src="/images/logo-croma-films.png"
+                src="/images/croma-logo.png"
                 alt="Croma films"
                 width={200}
                 height={50}
@@ -127,7 +127,7 @@ function Navbar() {
         >
           <Image
             className="imgMob"
-            src="/images/logo-croma-films.png"
+            src="/images/croma-logo.png"
             alt="Croma films"
             width={130}
             height={32}

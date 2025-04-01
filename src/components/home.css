@@ -18,6 +18,8 @@
 
 .home-video-wrapper video {
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -39,7 +41,7 @@
     z-index: 2;
     color: #ffffff;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .home-hero-content>div {
@@ -57,7 +59,7 @@
 }
 
 .home-hero-content h1 span {
-    color: #f8e9d4;
+    color: #01257d;
 }
 
 .home-hero-content h2 {
@@ -77,8 +79,7 @@
     line-height: 1.6;
     text-align: center;
     margin-bottom: 20px;
-    color: #01247dc6;
-}
+    color: #01257d;}
 
 .home-cta-button {
     display: inline-block;
@@ -112,8 +113,14 @@
     padding: 0 1rem;
 }
 
-.home-contact-section {
-    padding: 4rem 0;
+#contact.home-contact-section {
+    /* padding: 4rem 0; */
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.home-contact {
+    margin: 0 auto;
 }
 
 

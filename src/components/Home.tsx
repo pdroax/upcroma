@@ -34,7 +34,10 @@ export default function Home() {
                 efetivo.
               </p>
             </div>
-            <a href="#contact" className="home-cta-button">
+            <a
+              href="https://wa.me/554133442029" 
+              target="_blank"
+              className="home-cta-button">
               Faça um orçamento
             </a>
           </div>
@@ -51,7 +54,9 @@ export default function Home() {
         aria-label="Imagens de películas instaladas"
       ></div>
       <section id="contact" className="home-contact-section">
-        <Contact />
+        <div className="home-contact">
+          <Contact />
+        </div>
       </section>
     </div>
   );

@@ -50,9 +50,14 @@ function Footer() {
             </Link>
           </li>
           <li>
+            <Link href="https://wa.me/554133442029">
+              (41)3344-2029
+            </Link>
+          </li>
+          <li>
             <Link
               className="whatsApp"
-              href="https://wa.me/554133442029/Olá%2C%20gostaria%20de%20mais%20informações"
+              href="https://wa.me/554133442029"
               target="_blank"
               rel="noopener noreferrer"
             >
