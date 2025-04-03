@@ -65,6 +65,7 @@ export const products = [
     // description: '',
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
       {
         name: "5%",
         image: IMAGES.fume.grafite["5"],
@@ -93,6 +94,7 @@ export const products = [
     description: "",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
       {
         name: "5%",
         image: IMAGES.fume.verde["5"],
@@ -121,6 +123,8 @@ export const products = [
     description: "",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "5%",
         image: IMAGES.fume.verde["5"],
@@ -152,6 +156,8 @@ export const products = [
       "Película semi-brilho profissional. Muito eficiente contra o calor proveniente dos raios solares, sem ser totalmente espelhada",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "5%",
         image: IMAGES.metalizada["5"],
@@ -182,6 +188,8 @@ export const products = [
       "Películas mais espessas e resistentes, dão mais resistência ao vidro e impedem que ele se despedace na eventualidade da quebra",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "5% 4M",
         image: IMAGES.security["5"],
@@ -226,6 +234,8 @@ export const products = [
       "Película branca translúcida, impede a visão sem tirar a luminosidade do ambiente",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "Visualização",
         image: IMAGES.jateada.pelicula,
@@ -241,6 +251,8 @@ export const products = [
       "Um pouco mais transparente que a Película Jateada, o Vinil Jateado é indicado quando se necessita privacidade sem fechar muito o ambiente",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "Visualização",
         image: IMAGES.jateada.vinil,
@@ -257,6 +269,8 @@ export const products = [
       "Película prata em ambos os lados, tem a maior eficiência no bloqueio do calor do sol entre as películas, pois ao mesmo tempo filtra e reflete os raios UV e IR. Disponível na graduação 5%",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "Visualização",
         image: IMAGES.espelhadas.silver,
@@ -273,6 +287,8 @@ export const products = [
       "Película extra-escura (graduação 2%), prata no lado externo e fumê no lado interno. Grande capacidade de bloqueio de calor do sol",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "2%",
         image: IMAGES.silverBlack,
@@ -289,6 +305,8 @@ export const products = [
       "Películas espelhadas em cores diversas, com função decorativa. (OBS: Visualização externa)",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "Vermelho Espelhado",
         image: IMAGES.espelhadas.red,
@@ -331,6 +349,8 @@ export const products = [
     description: "Pelicula metalizada clara (56%)",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "Visualização",
         image: IMAGES.outros.museu,
@@ -346,6 +366,8 @@ export const products = [
       "Película clara (80%) com grande índice de bloqueio de UV (99%). Indicada para vitrines, para evitar o desbotamento causado pela incidência de raios solares. Pouco bloqueio de IR (calor).",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "Visualização",
         image: IMAGES.outros.lg80,
@@ -361,6 +383,8 @@ export const products = [
       "Películas opacas, utilizadas quando se deseja impedir totalmente a visibilidade através do vidro. Opção de preta (Blackout) ou branca (White-Out)",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "White-Out",
         image: IMAGES.outros.whiteOut,
@@ -379,6 +403,8 @@ export const products = [
       "Película premium, com alta eficiência no bloqueio de calor e UV. A versão mais clara (70%) é ideal para vitrines ou onde se deseja diminuir a incidência de calor do sol, mantendo totalmente a visibilidade.",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "5%",
         image: IMAGES.nano["5"],
@@ -415,6 +441,8 @@ export const products = [
       "Películas listradas, utilizadas quando se deseja separar ambientes sem impedir totalmente a visibilidade.",
     gradations: [
       { name: "Sem película", image: DEFAULT_IMAGE },
+      { name: "ignore", image: DEFAULT_IMAGE },
+
       {
         name: "Mini-blind",
         image: IMAGES.decorativa.miniBlind,

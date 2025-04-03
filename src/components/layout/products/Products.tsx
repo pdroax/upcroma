@@ -25,10 +25,11 @@ const DEFAULT_IMAGE = "/images/default.jpg";
 
 function Products() {
   const [openCard, setOpenCard] = useState<number | null>(null);
-  const [selectedGraduation, setSelectedGraduation] =
-    useState<SelectedGraduations>({});
+  // const [selectedGraduation, setSelectedGraduation] = useState<SelectedGraduations>({});
+  const [selectedGraduation, setSelectedGraduation] = useState<SelectedGraduations>({});
 
-  const toggleCard = (index: number): void => {
+
+  const toggleCard = (index: number) => {
     setOpenCard(openCard === index ? null : index);
     if (openCard !== index) {
       setSelectedGraduation((prevState) => {
@@ -133,8 +134,10 @@ function Products() {
 
                 {product.gradations.length > 0 && (
                   <>
-                    <h4 onClick={() => toggleCard(productIndex)}>
-                      Aplicações:
+                    <h4 
+                      style={{fontWeight: "bold"}}
+                      onClick={() => toggleCard(productIndex)}>
+                      Clique para ver as opções:
                     </h4>
                     <ul>
                       {product.gradations.map(
@@ -154,12 +157,22 @@ function Products() {
                         )
                       )}
                     </ul>
+                    <div className="div_wpp-button">
+                      <button className="Wpp-button">
+                        <a 
+                          href={`https://wa.me/554133442029?text=Olá,%20gostaria%20de%20fazer%20uma%20cotação%20de%20película%20${product.name}`}
+                          target="_blank">
+                            Faça uma cotação
+                          </a>
+                      </button>
+                    </div>
                   </>
                 )}
                 <button
                   className="expand-button"
-                  onClick={() => toggleCard(productIndex)}
+                  onClick={() => { toggleCard(productIndex)}}
                   type="button"
+
                 >
                   +
                 </button>

@@ -99,7 +99,7 @@ function Navbar() {
           </li>
           <li className="item">
             <Link
-              href="/contact"
+              href="#contact"
               onClick={() => {
                 toTop();
                 closeMenu();

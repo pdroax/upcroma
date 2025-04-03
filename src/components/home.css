@@ -152,6 +152,11 @@
         padding: 0.8em 3em;
         border-radius: 20px;
     }
+    #contact.home-contact-section {
+        /* padding: 4rem 0; */
+        max-width: 60%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -165,6 +170,11 @@
 
     .home-pitch-text p {
         font-size: 1rem;
+    }
+    #contact.home-contact-section {
+        /* padding: 4rem 0; */
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     .home-cta-button {
@@ -181,6 +191,11 @@
 
     .home-hero-content h1 {
         font-size: 1.5em;
+    }
+    #contact.home-contact-section {
+        /* padding: 4rem 0; */
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .home-hero-content h2 {

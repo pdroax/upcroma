@@ -7,6 +7,26 @@
     max-width: 80%;
 }
 
+.div_wpp-button {
+    padding-top: 60px;
+}
+
+.Wpp-button {
+    background-color: #007BFF;
+    color: #f8e9d4;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.Wpp-button:hover {
+    background-color: #01257D;
+    color: #f8e9d4;
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -91,7 +111,7 @@
     bottom: 15px;
     right: 15px;
     background-color: #007BFF;
-    color: white;
+    color: #f8e9d4;
     border: none;
     border-radius: 50%;
     width: 35px;
@@ -101,6 +121,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 300ms;
+}
+
+.expand-button:hover {
+    background-color: #01257D;
+    color: #f8e9d4;
 }
 
 @media (max-width: 1024px) {
