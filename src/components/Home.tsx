@@ -35,7 +35,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              href="https://wa.me/554133442029" 
+              href="https://wa.me/554133442029?text=Olá,%20eu%20gostaria%20de%20saber%20mais%20sobre!" 
               target="_blank"
               className="home-cta-button">
               Faça um orçamento

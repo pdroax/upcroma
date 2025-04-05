@@ -118,7 +118,7 @@ function ProjectForm() {
           />
         </div>
 
-        <SubmitButton />
+        <SubmitButton/>
       </form>
     </div>
   );

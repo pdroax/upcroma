@@ -229,7 +229,7 @@ export const products = [
   },
   // jateada
   {
-    name: "Película Jateada",
+    name: "Jateada",
     description:
       "Película branca translúcida, impede a visão sem tirar a luminosidade do ambiente",
     gradations: [
